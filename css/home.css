@@ -27,12 +27,23 @@
 
 .secondary-news-card{
     width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     margin: 0.5em;
     height: 100%;
     flex: 1;
     text-align: center;
     border: 1px solid black;
     border-radius: 5%;
+}
+
+.main-news-card-body{
+    margin-top: 1em;
+    display: block;
+    max-width: 100%;
+    padding: 1em;
+    height: 100%;
+    text-align: left;
 }
 
 .news-card-body{
@@ -47,18 +58,33 @@
     text-decoration: none;
 }
 
-.news-card-body h2{
-    color: black;
+h1{
+    font-size: 3em;
 }
 
-.news-card-body h5{
+h1{
+    font-size: 1.5em;
+}
+
+.main-news-card-body h2{
+    color: black;
+    font-size: 1em;
+}
+
+.main-news-card-body h5{
     margin-top: 1.5em;
     margin-bottom: 1em;
     color: darkslategray;
+    font-size: 0.5em;
+}    
+
+.news-card-body h4{
+    color: black;
+    font-size: 0.7em;
 }
 
 .main-img-card{
-    margin-top: 1em;
+    margin-bottom: 1em;
     width: 100%;
     border-radius: 10%;
 }
@@ -69,15 +95,22 @@
     border-radius: 10%;
 }
 
+.img-card-no-margin{
+    width: 100%;
+    border-radius: 10%;
+}
+
 .row > [class*='secondary-news-card']{
     display: flex;
     flex-direction: column;
 }
 
-@media screen and (min-width: 480px)
+@media screen and (min-width: 600px)
 {
     .secondary-news-card{
-        width: 45%;
+        width: 48%;
+        min-width: 40%;
+        max-width: 50%;
         margin: 0.5em;
         min-height: 18em;
         height: 80%;
@@ -88,17 +121,39 @@
     }
 
     .main-img-card{
-        margin-top: 1em;
+        margin-bottom: 1em;
         width: 80%;
         border-radius: 10%;
     }
+
+    h1{
+        font-size: 2em;
+    }
     
+    .main-news-card-body h2{
+        color: black;
+        font-size: 1.5em;
+    }
+
+    .main-news-card-body h5{
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        color: darkslategray;
+        font-size: 0.6em;
+    }    
+
+    .news-card-body h4{
+        color: black;
+        font-size: 0.9em;
+    }
 }
 
-@media screen and (min-width: 760px)
+@media screen and (min-width: 1000px)
 {
     .secondary-news-card{
-        width: 30%;
+        width: 33%;
+        min-width: 30%;
+        max-width: 33%;
         margin: 0.5em;
         min-height: 18em;
         height: 100%;
@@ -109,9 +164,30 @@
     }
 
     .main-img-card{
-        margin-top: 1em;
+        margin-bottom: 1em;
         width: 70%;
         border-radius: 10%;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    .main-news-card-body h2{
+        color: black;
+        font-size: 2em;
+    }
+
+    .main-news-card-body h5{
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        color: darkslategray;
+        font-size: 0.8em;
+    }    
+
+    .news-card-body h4{
+        color: black;
+        font-size: 1em;
     }
     
 }

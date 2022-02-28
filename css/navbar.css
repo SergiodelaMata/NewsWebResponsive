@@ -16,11 +16,30 @@
     margin: 3em;
 }
 
+.subtitle{
+    text-align: center;
+    margin: 2em;
+}
+
+
 .center{
     align-items: center;
     text-align: center;
     justify-content: center;
 }
+
+.left{
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+}
+
+.right{
+    align-items: right;
+    text-align: right;
+    justify-content: right;
+}
+
 
 body {
     font-family: sans-serif;
@@ -41,6 +60,11 @@ body {
     flex-wrap: wrap;
 }
 
+.simple-row {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #navbar {
     --navbar-height: 6,66%;
@@ -118,8 +142,8 @@ body {
 
 .icon-bar{
     display: block;
-    width: 2.604%;
-    height: 0.416%;
+    width: 10%;
+    height: 10%;
     margin: 0.125em;
     background-color: var(--navbar-text-color-focus);
 }
@@ -138,21 +162,21 @@ body {
 #navbar-toggle[aria-expanded="false"] .icon-bar:is(:first-child) {
     position: absolute;
     margin: -1em;
-    width: 10%;
+    width: 3em;
     height: 1%;
 }
 
 #navbar-toggle[aria-expanded="false"] .icon-bar:is(:nth-child(2)) {
     position: absolute;
     margin: 0em;
-    width: 10%;
+    width: 3em;
     height: 1%;
 }
 
 #navbar-toggle[aria-expanded="false"] .icon-bar:is(:last-child) {
     position: absolute;
     margin: 1em;
-    width: 10%;
+    width: 3em;
     height: 1%;
 }
 
@@ -203,7 +227,7 @@ body {
     padding: 1em;
 }
 
-@media screen and (min-width: 480px)
+@media screen and (min-width: 600px)
 {
     #navbar-toggle,
     #navbar-toggle[aria-expanded="true"]{
