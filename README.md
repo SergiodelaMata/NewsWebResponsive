@@ -1,5 +1,4 @@
 # NewsWebResponsive
-Página Web de noticias con diseño web responsivo.
+News Website with a responsive design.
 
-Para poder visualizar el contenido de las páginas desarrolladas, simplemente valdría con hacer doble chick en uno de los ficheros HTML 
-con el botón izquierdo del ratón para poder visualizarlo en un navegador.
+To watch the content of the developed pages, it is only needed to click on the HTML files with the left button of the mouse to see it at the browser.
